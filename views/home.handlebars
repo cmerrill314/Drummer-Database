@@ -1,0 +1,179 @@
+<div id="main">
+	<h1>Drummer Database</h1>
+	<h4>by Chris Merrill</h4>
+	<h3 class="header">Search</h3>
+	<div id="search">
+		<div class="form_box2">
+			<h2>Search Drum Kits by Drummer Name:</h2>
+			<form class="form">
+				<label>Choose Drummer:</label><select name="name" id="search_drummer_kit"></select><br>
+				<br>
+				<input type="submit" value="Go" class="submit" id="search_kit_by_drummer">
+			</form>
+		</div>
+		<div class="form_box2">
+			<h2>Search Drummers by Drum Kits:</h2>
+			<form class="form">
+				<label>Choose Drum Kit:</label><select name="drum_kit" id="search_kit_drummer"></select><br>
+				<br>
+				<input type="submit" value="Go" class="submit" id="search_drummer_by_kit">
+			</form>
+		</div>
+		<div class="form_box2">
+			<h2>Search Brands by Drummer Name:</h2>
+			<form class="form">
+				<label>Choose Drummer:</label><select name="name" id="search_brand_drummer"></select><br>
+				<br>
+				<input type="submit" value="Go" class="submit" id="search_brand_by_drummer">
+			</form>
+		</div>
+		<div class="form_box2">
+			<h2>Search Drummers by Brand Name:</h2>
+			<form class="form">
+				<label>Choose Brand:</label><select name="name" id="search_drummer_brand"></select><br>
+				<br>
+				<input type="submit" value="Go" class="submit" id="search_drummer_by_brand">
+			</form>
+		</div>
+		<div class="form_box2">
+			<h2>Search Stick Type by Drummer Name:</h2>
+			<form class="form">
+				<label>Choose Drummer:</label><select name="name" id="search_stick_drummer"></select><br>
+				<br>
+				<input type="submit" value="Go" class="submit" id="search_stick_by_drummer">
+			</form>
+		</div>
+		<div class="form_box2">
+			<h2>Search Drummers by Stick Type:</h2>
+			<form class="form">
+				<label>Choose Stick Type:</label><select name="stick_type" id="search_drummer_stick"></select><br>
+				<br>
+				<input type="submit" value="Go" class="submit" id="search_drummer_by_stick">
+			</form>
+		</div>
+		<h3>Search Results:</h3>
+		<table id="results"></table>
+	</div>
+	<h3 class="header">Add/Update Items</h3>
+	<div id="add_forms">
+		<div class="form_box">
+			<h2>Add a Drummer:</h2>
+			<form class="form">
+				<input type="hidden" name="drummer_id_input" id="drummer_id"><br>
+				<label>Name:</label><input type="text" name="name" id="drummer_name"><br>
+				<label>Hometown:</label><input type="text" name="hometown" id="drummer_hometown"><br>
+				<label>Band:</label><input type="text" name="band" id="drummer_band"><br>
+				<label>Stick:</label><select name ="stick_id" id="drummer_stick_id"></select><br>
+				<br><br><br><br><br><br>
+				<input type="submit" value="Add Drummer" class="submit" id="add_drummer">
+			</form>
+		</div>
+		<div class="form_box">
+			<h2>Add a Drum Kit:</h2>
+			<form class="form">
+				<input type="hidden" name="kit_id_input" id="kit_id"><br>
+				<label>Brand:</label><select name ="brand_id" id="kit_brand_id"></select><br>
+				<label>Pieces:</label><input type="number" name="pieces" id="kit_pieces"><br>
+				<label>Cymbal Type:</label><input type="text" name="cymbal_type" id="kit_cymbal_type"><br>
+				<br><br><br><br><br><br><br><br><br><br><br>
+				<input type="submit" value="Add Drum Kit" class="submit" id="add_drum_kit">
+			</form>
+		</div>
+		<div class="form_box">
+			<h2>Add a Brand:</h2>
+			<form class="form">
+				<input type="hidden" name="brand_id_input" id="brand_id"><br>
+				<label>Name:</label><input type="text" name="name" id="brand_name"><br>
+				<label>Founder:</label><input type="text" name="founder" id="brand_founder"><br>
+				<label>Country of Origin:</label><input type="text" name="country_of_origin" id="brand_country_of_origin"><br>
+				<label>Year Established:</label><input type="number" name="year_established" id="brand_year_established"><br>
+				<br><br><br><br><br><br>
+				<input type="submit" value="Add Brand" class="submit" id="add_brand">
+			</form>
+		</div>
+		<div class="form_box">
+			<h2>Add a Stick:</h2>
+			<form class="form">
+				<input type="hidden" name="stick_id_input" id="stick_id"><br>
+				<label>Type:</label><input type="text" name="type" id="stick_type"><br>
+				<label>Brand:</label><select name ="brand_id" id="stick_brand_id"></select><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<input type="submit" value="Add Stick" class="submit" id="add_stick">
+			</form>
+		</div>
+		<div class="form_box">
+			<h2>Add a "Plays" Relationship:</h2>
+			<form class="form">
+				<label>Drummer:</label><select name ="drummer_id" id="plays_drummer_id"></select><br>
+				<label>Drum Kit:</label><select name ="kit_id" id="plays_kit_id"></select><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<input type="submit" value="Add Plays" class="submit" id="add_plays">
+			</form>
+		</div>
+		<div class="form_box">
+			<h2>Update an Existing Drummer:</h2>
+			<form class="form">
+				<label>Drummer To Update:</label><select name ="drummer_id" id="update_drummer_id"></select><br>
+				<label>New Name:</label><input type="text" name="name" id="update_name"><br>
+				<label>New Hometown:</label><input type="text" name="hometown" id="update_hometown"><br>
+				<label>New Band:</label><input type="text" name="band" id="update_band"><br>
+				<label>New Stick:</label><select name ="stick_id" id="update_stick_id"></select><br>
+				<br>
+				<input type="submit" value="Update Drummer" class="submit" id="update_drummer">
+			</form>
+		</div>
+	</div>
+	<h3 class="header">Data Tables</h3>
+	<div id="tables">
+		<center><p>This section shows the four entity tables (and the many-to-many relationship table "plays") as they exist in the database.</p></center>
+		<h3>Drummers:</h3>
+		<table id="drummer">
+			<tr>
+				<th>Drummer ID</th>
+				<th>Name</th>
+				<th>Hometown</th>
+				<th>Band</th>
+				<th>Stick ID</th>
+				<th class="delete">Delete</th>
+			</tr>
+		</table>
+		<h3>Drum Kits:</h3>
+		<table id="drum_kit">
+			<tr>
+				<th>Kit ID</th>
+				<th>Brand ID</th>
+				<th>Pieces</th>
+				<th>Cymbal Type</th>
+				<th class="delete">Delete</th>
+			</tr>
+		</table>
+		<h3>Brands:</h3>
+		<table id="brand">
+			<tr>
+				<th>Brand ID</th>
+				<th>Name</th>
+				<th>Founder</th>
+				<th>Country of Origin</th>
+				<th>Year Established</th>
+				<th class="delete">Delete</th>
+			</tr>
+		</table>
+		<h3>Sticks:</h3>
+		<table id="stick">
+			<tr>
+				<th>Stick ID</th>
+				<th>Type</th>
+				<th>Brand ID</th>
+				<th class="delete">Delete</th>
+			</tr>
+		</table>
+		<h3>"Plays" Relationships:</h3>
+		<table id="plays">
+			<tr>
+				<th>Drummer ID</th>
+				<th>Kit ID</th>
+				<th class="delete">Delete</th>
+			</tr>
+		</table>
+	</div>
+</div>

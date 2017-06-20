@@ -1,0 +1,146 @@
+/*
+Christopher Merrill 
+CS340
+Final Project: Drummer Database
+
+Description: This file contains all of the styling for the web page
+*/
+
+body {
+	background:#f9f9f9;
+}
+
+#main {
+	text-align: left;
+	font-family: arial;
+
+}
+
+h1, h3, h4, h2 {
+	text-align: center;
+}
+
+.delete {
+	width: 60px;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 870px;
+	margin: auto;
+}
+
+.form_box {
+	background: white;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	height: 620px;
+	color: black;
+}
+
+.form_box2 {
+	background: white;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	height: 270px;
+	color: black;
+}
+
+#tables {
+	margin: auto;
+}
+
+td {
+
+	text-align: left;
+	border: 1px solid black;
+	padding: 15px;
+	background-color: white;
+}
+
+th {
+	text-align: center;
+	border: 1px solid black;
+	padding: 15px;
+	background-color: white;
+}
+
+p {
+	font-weight: bold;
+}
+
+.header {
+	background-color: #6893e2;
+	height: auto;
+	vertical-align:top;
+	border: 2px solid black;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+	width: 220px;
+    text-align: left;
+	color: black;
+	font-family: arial;
+	padding-top: 20px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+
+input[type=text], input[type=number] {
+	width: 290px;
+	padding: 12px 20px;
+	margin: 8px 8px 0 7px;
+	box-sizing: border-box;
+	border-color: #00d4ff;
+}
+
+input[type=submit] {
+	color: white;
+    background-color: #ffa319;
+    border: 2px solid white;
+    padding: 16px 32px;
+    cursor: pointer;
+	text-align: center;
+	display: inline-block;
+}
+
+select {
+	width: 290px;
+	padding: 12px 20px;
+	margin: 8px 8px 0 7px;
+	box-sizing: border-box;
+	border-color: #00d4ff;
+	background-color: #6893e2;
+	color: white;
+}
+
+.submit {
+	width: 150px;
+	display: inline-block;
+	overflow: auto;
+	white-space: nowrap;
+	border: 1px white solid;
+	margin-bottom: 10px;
+}
+
+.submit:hover {
+	opacity: 0.9;
+}

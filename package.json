@@ -1,0 +1,18 @@
+{
+  "name": "drummer-database",
+  "version": "1.0.0",
+  "description": "A database of drummers, the equipment they use, and the brands of the equipment they use.",
+  "main": "drums.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris_Merrill",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.2",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.11.3",
+    "mysql": "^2.8.0"
+  }
+}
